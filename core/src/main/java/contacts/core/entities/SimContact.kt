@@ -93,7 +93,7 @@ sealed interface ExistingSimContactEntity : SimContactEntity, ExistingEntity {
  * An existing immutable [SimContactEntity].
  */
 @Parcelize
-data class SimContact internal constructor(
+data class SimContact @JvmOverloads constructor(
 
     override val id: Long,
 
